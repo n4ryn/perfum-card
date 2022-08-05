@@ -25,12 +25,12 @@ body {
 }
 
 .container {
-  max-width: 42rem;
+  max-width: 38rem;
+  max-height: 28rem;
   background: var(--white);
   border-radius: 10px;
   margin: auto;
   display: flex;
-  box-shadow: 0 0.3rem 0.4rem 0 var(--dark-grayish-blue);
 }
 
 .column {
@@ -53,17 +53,19 @@ body {
 
 h1 {
   color: var(--very-dark-blue);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Fraunces", serif;
-  line-height: 2.6rem;
+  line-height: 2.2rem;
 }
 
 p {
+  font-size: 0.9rem;
   line-height: 1.4rem;
 }
 
 .product {
-  letter-spacing: 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
 }
 
 #price {
@@ -101,7 +103,6 @@ button:hover {
   position: absolute;
   padding: 1rem;
   bottom: 0;
-  /* background: black; */
   text-align: center;
   width: 100%;
 }
@@ -117,40 +118,43 @@ button:hover {
   }
 
   .container {
-    width: 90vw;
-    height: 88vh;
+    max-width: 90%;
+    max-height: 80%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
   }
 
   .product-image {
-    width: 90vw;
-    height: 45vh;
+    width: 100%;
+    height: 40vh;
     object-fit: cover;
     border-radius: 10px 0 0 0;
   }
 
   .text-container {
-    margin-bottom: 5rem;
     padding: 2rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 0.4rem;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
   .text-container {
     margin-bottom: 2rem;
     padding: 1rem;
   }
 
-  h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
   p {
     font-size: 0.8rem;
   }
