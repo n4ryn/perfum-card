@@ -97,6 +97,20 @@ button:hover {
   box-shadow: 0 0 0.6rem 0 var(--dark-cyan);
 }
 
+.footer {
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  /* background: black; */
+  text-align: center;
+  width: 100%;
+}
+
+.footer a {
+  color: var(--very-dark-blue);
+  text-decoration: none;
+}
+
 @media screen and (max-width: 700px) {
   .column {
     width: 100%;
@@ -104,7 +118,7 @@ button:hover {
 
   .container {
     width: 90vw;
-    height: 90vh;
+    height: 88vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -118,11 +132,30 @@ button:hover {
   }
 
   .text-container {
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     padding: 2rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text-container {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    height: 2.4rem;
   }
 }
